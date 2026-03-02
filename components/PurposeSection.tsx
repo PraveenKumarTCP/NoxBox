@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Play, X } from "lucide-react"
+import { ArrowRight, ChevronRight, Play, X } from "lucide-react"
 import VideoBgImage from "@/public/assets/purpose_video_bg.jpg"
 import Image from "next/image"
 import Compensation from "@/public/assets/compensation.png"
@@ -90,7 +90,7 @@ export default function PurposeSection() {
             text="Strong opportunities for career growth and advancement both locally and internationally."
             />
 
-            <Feature
+            {/* <Feature
             img={Engagement.src}
             title="Corporate Engagement"
             text="Linde recognizes employee contributions and engages through various programs and activities."
@@ -100,7 +100,7 @@ export default function PurposeSection() {
             img="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyODZlYTQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1mZXJyaXMtd2hlZWwtaWNvbiBsdWNpZGUtZmVycmlzLXdoZWVsIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIyIi8+PHBhdGggZD0iTTEyIDJ2NCIvPjxwYXRoIGQ9Im02LjggMTUtMy41IDIiLz48cGF0aCBkPSJtMjAuNyA3LTMuNSAyIi8+PHBhdGggZD0iTTYuOCA5IDMuMyA3Ii8+PHBhdGggZD0ibTIwLjcgMTctMy41LTIiLz48cGF0aCBkPSJtOSAyMiAzLTggMyA4Ii8+PHBhdGggZD0iTTggMjJoOCIvPjxwYXRoIGQ9Ik0xOCAxOC43YTkgOSAwIDEgMC0xMiAwIi8+PC9zdmc+"
             title="Inclusive Culture"
             text="Linde plc fosters an inclusive culture that values diversity and promotes a sense of belonging among employees."
-            />
+            /> */}
 
         </div>
 
@@ -170,20 +170,17 @@ export default function PurposeSection() {
 
             </div>
 
-            <div>
-                <button 
-                className="flex items-center gap-2
-          bg-[#1BA0D7]
-          hover:bg-[#1693c6]
-          text-white
-          text-sm
-          px-5
-          py-2
-          rounded-full
-          transition cursor-pointer">
-                    Learn More
-                </button>
-            </div>
+         <div data-aos="fade-up" data-aos-delay="200" className="mt-10">
+            <button className="relative bg-[#1EA7D7] px-8 py-4.5 text-white font-medium flex items-center cursor-pointer">
+
+              Explore Career Opportunities
+
+              <span className="absolute -right-6 w-12 h-12 bg-[#1EA7D7] rounded-full flex items-center justify-center shadow-lg border border-black">
+                <ChevronRight className="" size={22} />
+              </span>
+
+            </button>
+          </div>
 
         </div>
 

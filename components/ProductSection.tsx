@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CheckCircle, ArrowRight, Sparkles } from "lucide-react";
+import { CheckCircle, ArrowRight, Sparkles, ChevronRight } from "lucide-react";
 import ProductLeft from "@/public/assets/noxbox_left_product.png";
 import ProductRight from "@/public/assets/noxbox_right_product.png";
 import GeminiLogo from "@/public/assets/gemini_logo_blue.png";
@@ -29,7 +29,7 @@ export default function ProductShowcase() {
             data-aos-delay="100"
             className="text-xl font-semibold"
           >
-            NOxBOX® Nitric Oxide Delivery and Monitoring Systemr
+            NOxBOX® Nitric Oxide Delivery and Monitoring System
           </h3>
 
           <p
@@ -79,7 +79,7 @@ export default function ProductShowcase() {
               Learn more about the NOxBOXi
 
               <span className="absolute -right-6 w-12 h-12 bg-[#1EA7D7] rounded-full flex items-center justify-center shadow-lg border border-black">
-                <ArrowRight size={18}/>
+                <ChevronRight className="" size={22} />
               </span>
 
             </button>

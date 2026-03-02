@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, ChevronRight, Sparkles } from "lucide-react"
 
 export default function StayUpdated() {
 
@@ -104,7 +104,7 @@ export default function StayUpdated() {
               border
               border-black
               ">
-                <ArrowRight size={18}/>
+                <ChevronRight className="" size={22} />
               </span>
 
             </button>

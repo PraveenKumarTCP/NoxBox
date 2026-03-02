@@ -17,7 +17,7 @@ export default function HeroSection() {
 
           {/* Background Layer (Video Ready) */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-black">
+        <div className="absolute inset-0">
                 {/* Future video example */}
                 
                 <video
@@ -27,7 +27,7 @@ export default function HeroSection() {
                             muted
                             playsInline
                             onEnded={handleVideoEnd}
-                            className="absolute inset-0 w-full h-full object-cover z-0"
+                            className="absolute  object-cover z-0"
                         ></video>
             
             </div>

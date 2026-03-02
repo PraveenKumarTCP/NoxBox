@@ -26,8 +26,8 @@ export default function Navbar() {
     <header
       className={`
         fixed left-0 right-0 z-50 flex justify-center text-base
-        transition-all duration-700 ease-in-out
-        ${scrolled ? "top-0 px-0" : "top-6"}
+        transition-all duration-700 ease-in-out 
+        ${scrolled ? "top-0 px-0" : "hidden top-6"}
       `}
     >
           {menuOpen && (

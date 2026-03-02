@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, CheckCircle, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle, ChevronRight, Sparkles } from "lucide-react";
 import NoxboxProduct from "@/public/assets/noxbox_product.jpg";
 import NoxboxCare from "@/public/assets/noxbox_care.png";
 import NoxboxBuilding from "@/public/assets/noxbox_office.png";
@@ -152,7 +152,8 @@ export default function AboutSection() {
               About NOxBOX Ltd
 
               <span className="absolute -right-6 w-12 h-12 bg-[#1C8DBF] rounded-full flex items-center justify-center shadow-lg border">
-                <ArrowRight size={18} />
+                {/* <ArrowRight size={18} /> */}
+                <ChevronRight className="" size={22} />
               </span>
             </button>
           </div>

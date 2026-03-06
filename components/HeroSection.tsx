@@ -13,11 +13,11 @@ export default function HeroSection() {
         setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % bannerVideos.length);
     };
   return (
-    <>
+    <div className="relative w-full min-h-screen">
 
           {/* Background Layer (Video Ready) */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0">
+      <div className="absolute inset-0 -z-10 w-full h-full">
+        <div className="absolute inset-0 w-full h-full">
                 {/* Future video example */}
                 
                 <video
@@ -27,7 +27,7 @@ export default function HeroSection() {
                             muted
                             playsInline
                             onEnded={handleVideoEnd}
-                            className="absolute  object-cover z-0"
+                            className="w-full h-full object-cover z-0"
                         ></video>
             
             </div>
@@ -35,15 +35,15 @@ export default function HeroSection() {
           {/* Hero Content */}
           <section className="
             relative
-            bottom-30
+            h-screen
             flex
-            items-end
             justify-center
-            min-h-screen
+            items-end
+            w-full
             text-center
             px-6
           ">
-            <div className="max-w-5xl">
+            <div className="max-w-5xl pb-24">
               
               <h1
                 data-aos="fade-up"
@@ -78,7 +78,7 @@ export default function HeroSection() {
     
             </div>
           </section>
-    </>
+    </div>
     
   )
 }

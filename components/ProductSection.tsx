@@ -74,7 +74,7 @@ export default function ProductShowcase() {
           </ul>
 
           <div data-aos="fade-up" data-aos-delay="600" className="mt-10">
-            <button className="relative bg-[#1EA7D7] px-8 py-4.5 text-white font-medium flex items-center">
+            <button className="relative bg-[#1EA7D7] px-8 py-4.5 text-white font-medium flex items-center cursor-pointer">
 
               Learn more about the NOxBOXi
 

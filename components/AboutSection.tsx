@@ -148,7 +148,7 @@ export default function AboutSection() {
 
           {/* CTA Button */}
           <div data-aos="fade-up" data-aos-delay="500">
-            <button className="relative bg-[#1C8DBF] text-white px-8 py-4.5 font-medium flex items-center">
+            <button className="relative bg-[#1C8DBF] text-white px-8 py-4.5 font-medium flex items-center cursor-pointer">
               About NOxBOX Ltd
 
               <span className="absolute -right-6 w-12 h-12 bg-[#1C8DBF] rounded-full flex items-center justify-center shadow-lg border">

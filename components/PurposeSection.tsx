@@ -52,7 +52,7 @@ export default function PurposeSection() {
 
 
         {/* MAIN GRID */}
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
         {/* FEATURES GRID (LEFT) */}
         <div
@@ -61,7 +61,7 @@ export default function PurposeSection() {
             grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2
             rounded-md
             overflow-hidden
-            gap-2
+            gap-6
             "
             data-aos="fade-right"
         >
@@ -170,7 +170,12 @@ export default function PurposeSection() {
 
             </div>
 
-         <div data-aos="fade-up" data-aos-delay="200" className="mt-10">
+
+        </div>
+
+        </div>
+
+          <div data-aos="fade-up" data-aos-delay="200" className="mt-10 flex justify-center items-center">
             <button className="relative bg-[#1EA7D7] px-8 py-4.5 text-white font-medium flex items-center cursor-pointer">
 
               Explore Career Opportunities
@@ -182,9 +187,6 @@ export default function PurposeSection() {
             </button>
           </div>
 
-        </div>
-
-        </div>
 
       </div>
 

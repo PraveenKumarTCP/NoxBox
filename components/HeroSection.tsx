@@ -43,7 +43,7 @@ export default function HeroSection() {
             text-center
             px-6
           ">
-            <div className="max-w-5xl pb-24">
+            <div className="max-w-5xl pb-10 sm:pb-24">
               
               <h1
                 data-aos="fade-up"

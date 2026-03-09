@@ -5,8 +5,11 @@ export default function HeroSection() {
         const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
     const bannerVideos = [
-        "https://cdn.clinicalvisuals.com/medical/invotec/landingvideos/invotec_02.webm",
-        "https://cdn.clinicalvisuals.com/medical/invotec/landingvideos/invotec_01.webm",
+        "https://cdn.clinicalvisuals.com/medical/noxbox/landingpage/Noxboxi_5.webm",
+        "https://cdn.clinicalvisuals.com/medical/noxbox/landingpage/Noxboxi_4.webm",
+        "https://cdn.clinicalvisuals.com/medical/noxbox/landingpage/Noxboxi_3.webm",
+        "https://cdn.clinicalvisuals.com/medical/noxbox/landingpage/Noxboxi_2.webm",
+        "https://cdn.clinicalvisuals.com/medical/noxbox/landingpage/Noxboxi_1.webm"
     ];
 
     const handleVideoEnd = () => {

@@ -12,8 +12,20 @@ import Engagement from "@/public/assets/engagement.png"
 import GeminiLogo from "@/public/assets/gemini_logo_blue.png"
 
 export default function PurposeSection() {
-
+          const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [open,setOpen] = useState(false)
+
+    const bannerVideos = [
+      "https://cdn.clinicalvisuals.com/medical/noxbox/shortclips/Noxboxi_3.webm",
+      "https://cdn.clinicalvisuals.com/medical/noxbox/shortclips/Noxboxi_2.webm",
+      "https://cdn.clinicalvisuals.com/medical/noxbox/shortclips/Noxboxi_1.webm"
+    ];
+
+        const handleVideoEnd = () => {
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % bannerVideos.length);
+    };
+
+
 
   return (
     <section className="relative bg-[#0C3B5D] py-24 px-6 lg:px-16 overflow-hidden">
@@ -211,11 +223,16 @@ export default function PurposeSection() {
             </button>
 
             <video
+              key={currentVideoIndex}
+              src={bannerVideos[currentVideoIndex]}
+              muted
+              playsInline
+              onEnded={handleVideoEnd}
               controls
               autoPlay
-              className="w-full rounded-lg"
+              className="w-full rounded-lg h-150 object-cover"
             >
-              <source src="https://cdn.clinicalvisuals.com/medical/invotec/landingvideos/invotec_02.webm" type="video/webm"/>
+              {/* <source src="https://cdn.clinicalvisuals.com/medical/invotec/landingvideos/invotec_02.webm" type="video/webm"/> */}
             </video>
 
           </div>
